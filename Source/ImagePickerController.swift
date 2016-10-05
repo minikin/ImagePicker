@@ -234,8 +234,7 @@ open class ImagePickerController: UIViewController {
   func volumeChanged(_ notification: Notification) {
     guard let slider = volumeView.subviews.filter({ $0 is UISlider }).first as? UISlider,
       let userInfo = (notification as NSNotification).userInfo,
-      let changeReason = userInfo["AVSystemController_AudioVolumeChangeReasonNotificationParameter"] as? String
-      , changeReason == "ExplicitVolumeChange" else { return }
+      let changeReason = userInfo["AVSystemController_AudioVolumeChangeReasonNotificationParameter"] as? String, changeReason == "ExplicitVolumeChange" else { return }
 
     slider.setValue(volume, animated: false)
     takePicture()
@@ -251,7 +250,7 @@ open class ImagePickerController: UIViewController {
 
   // MARK: - Helpers
 
-  open override var prefersStatusBarHidden : Bool {
+  open override var prefersStatusBarHidden: Bool {
     return true
   }
 
@@ -263,7 +262,7 @@ open class ImagePickerController: UIViewController {
       self.galleryView.collectionView.contentInset = UIEdgeInsets.zero
       }, completion: { _ in
         completion?()
-    }) 
+    })
   }
 
   open func showGalleryView() {
@@ -379,7 +378,7 @@ extension ImagePickerController: CameraViewDelegate {
       self.galleryView.collectionView.transform = CGAffineTransform(translationX: collectionSize.width, y: 0)
       }, completion: { _ in
         self.galleryView.collectionView.transform = CGAffineTransform.identity
-    }) 
+    })
   }
 
   func cameraNotAvailable() {
@@ -390,7 +389,7 @@ extension ImagePickerController: CameraViewDelegate {
 
   // MARK: - Rotation
 
-  open override var supportedInterfaceOrientations : UIInterfaceOrientationMask {
+  open override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
     return .portrait
   }
 
@@ -414,7 +413,7 @@ extension ImagePickerController: CameraViewDelegate {
       }
 
       self.topView.flashButton.transform = rotate.concatenating(translate)
-    }) 
+    })
   }
 }
 

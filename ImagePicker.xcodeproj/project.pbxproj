@@ -149,16 +149,16 @@
 		D5DC59AA1C201CC4003BD79B /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				39D1340F1CAC4B4E00EA2ECE /* AssetManager.swift */,
+				D5DC59B31C201CC4003BD79B /* Configuration.swift */,
 				D25A8C2D1D4768250008D2F7 /* Helper.swift */,
+				D5DC59BA1C201CC4003BD79B /* ImagePickerController.swift */,
+				39E3C3301CAFD79200340DAD /* LocationManager.swift */,
 				D5DC59AC1C201CC4003BD79B /* BottomView */,
 				D5DC59B11C201CC4003BD79B /* CameraView */,
-				D5DC59B31C201CC4003BD79B /* Configuration.swift */,
 				D5DC59B41C201CC4003BD79B /* Extensions */,
 				D5DC59B61C201CC4003BD79B /* ImageGallery */,
-				D5DC59BA1C201CC4003BD79B /* ImagePickerController.swift */,
 				D5DC59BC1C201CC4003BD79B /* TopView */,
-				39D1340F1CAC4B4E00EA2ECE /* AssetManager.swift */,
-				39E3C3301CAFD79200340DAD /* LocationManager.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -272,8 +272,12 @@
 				TargetAttributes = {
 					D5DC598A1C201BE1003BD79B = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = QQJ8AA32HJ;
+						DevelopmentTeam = U8369V84MM;
 						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
+					};
+					D5DC59941C201BE1003BD79B = {
+						DevelopmentTeam = QQJ8AA32HJ;
 					};
 				};
 			};
@@ -475,9 +479,9 @@
 		D5DC59A01C201BE1003BD79B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = QQJ8AA32HJ;
+				DEVELOPMENT_TEAM = U8369V84MM;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -495,7 +499,7 @@
 		D5DC59A11C201BE1003BD79B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = QQJ8AA32HJ;
 				DYLIB_COMPATIBILITY_VERSION = 1;

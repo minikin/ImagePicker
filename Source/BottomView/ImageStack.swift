@@ -7,6 +7,7 @@ open class ImageStack {
     public static let imageDidPush = "imageDidPush"
     public static let imageDidDrop = "imageDidDrop"
     public static let stackDidReload = "stackDidReload"
+		public static let pathToPhoto = "weGetURL"
   }
 
   open var assets = [PHAsset]()

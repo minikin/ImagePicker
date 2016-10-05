@@ -171,7 +171,7 @@ class CameraView: UIViewController, CLLocationManagerDelegate, CameraManDelegate
         self.cameraMan.switchCamera {
           UIView.animate(withDuration: 0.7, animations: {
             self.containerView.alpha = 0
-          }) 
+          })
         }
     })
   }
@@ -193,7 +193,7 @@ class CameraView: UIViewController, CLLocationManagerDelegate, CameraManDelegate
       }, completion: { _ in
         UIView.animate(withDuration: 0.1, animations: {
           self.capturedImageView.alpha = 0
-        }) 
+        })
     })
 
     cameraMan.takePhoto(previewLayer, location: locationManager?.latestLocation) {
