@@ -9,8 +9,7 @@
 /* Begin PBXBuildFile section */
 		39D134101CAC4B4E00EA2ECE /* AssetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D1340F1CAC4B4E00EA2ECE /* AssetManager.swift */; };
 		39E3C3311CAFD79200340DAD /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E3C3301CAFD79200340DAD /* LocationManager.swift */; };
-		8547A7291DA7D61F00A37DD7 /* OverlayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8547A7281DA7D61F00A37DD7 /* OverlayView.xib */; };
-		8547A72B1DA7D6AA00A37DD7 /* OverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8547A72A1DA7D6AA00A37DD7 /* OverlayView.swift */; };
+		854AF88D1DABA076005338E7 /* Rectangle@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 854AF88C1DABA076005338E7 /* Rectangle@3x.png */; };
 		D20FF6361CD23426000F3BFE /* CameraMan.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20FF6351CD23426000F3BFE /* CameraMan.swift */; };
 		D25A8C2C1D47681E0008D2F7 /* ImageGalleryLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25A8C2B1D47681E0008D2F7 /* ImageGalleryLayout.swift */; };
 		D25A8C2E1D4768250008D2F7 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25A8C2D1D4768250008D2F7 /* Helper.swift */; };
@@ -49,8 +48,7 @@
 /* Begin PBXFileReference section */
 		39D1340F1CAC4B4E00EA2ECE /* AssetManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssetManager.swift; sourceTree = "<group>"; };
 		39E3C3301CAFD79200340DAD /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
-		8547A7281DA7D61F00A37DD7 /* OverlayView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OverlayView.xib; sourceTree = "<group>"; };
-		8547A72A1DA7D6AA00A37DD7 /* OverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayView.swift; sourceTree = "<group>"; };
+		854AF88C1DABA076005338E7 /* Rectangle@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Rectangle@3x.png"; sourceTree = "<group>"; };
 		D20FF6351CD23426000F3BFE /* CameraMan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraMan.swift; sourceTree = "<group>"; };
 		D25A8C2B1D47681E0008D2F7 /* ImageGalleryLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageGalleryLayout.swift; sourceTree = "<group>"; };
 		D25A8C2D1D4768250008D2F7 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
@@ -101,13 +99,13 @@
 		D5D370B91C44FD1600690C0A /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				854AF88C1DABA076005338E7 /* Rectangle@3x.png */,
 				D5D370BA1C44FD1600690C0A /* AUTO@3x.png */,
 				D5D370BB1C44FD1600690C0A /* cameraIcon@3x.png */,
 				D5D370BC1C44FD1600690C0A /* focusIcon@3x.png */,
 				D5D370BD1C44FD1600690C0A /* OFF@3x.png */,
 				D5D370BE1C44FD1600690C0A /* ON@3x.png */,
 				D5D370BF1C44FD1600690C0A /* selectedImageGallery@3x.png */,
-				8547A7281DA7D61F00A37DD7 /* OverlayView.xib */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -182,7 +180,6 @@
 		D5DC59B11C201CC4003BD79B /* CameraView */ = {
 			isa = PBXGroup;
 			children = (
-				8547A72A1DA7D6AA00A37DD7 /* OverlayView.swift */,
 				D5DC59B21C201CC4003BD79B /* CameraView.swift */,
 				D20FF6351CD23426000F3BFE /* CameraMan.swift */,
 			);
@@ -310,9 +307,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8547A7291DA7D61F00A37DD7 /* OverlayView.xib in Resources */,
 				D5D370C41C44FD1600690C0A /* ON@3x.png in Resources */,
 				D5D370C21C44FD1600690C0A /* focusIcon@3x.png in Resources */,
+				854AF88D1DABA076005338E7 /* Rectangle@3x.png in Resources */,
 				D5D370C01C44FD1600690C0A /* AUTO@3x.png in Resources */,
 				D5D370C51C44FD1600690C0A /* selectedImageGallery@3x.png in Resources */,
 				D5D370C11C44FD1600690C0A /* cameraIcon@3x.png in Resources */,
@@ -359,7 +356,6 @@
 				D5DC59C81C201CC4003BD79B /* ConstraintsSetup.swift in Sources */,
 				D5DC59C71C201CC4003BD79B /* Configuration.swift in Sources */,
 				D25A8C2E1D4768250008D2F7 /* Helper.swift in Sources */,
-				8547A72B1DA7D6AA00A37DD7 /* OverlayView.swift in Sources */,
 				39D134101CAC4B4E00EA2ECE /* AssetManager.swift in Sources */,
 				D5DC59C21C201CC4003BD79B /* BottomContainerView.swift in Sources */,
 				D5DC59CC1C201CC4003BD79B /* ImagePickerController.swift in Sources */,

@@ -10,6 +10,14 @@ protocol CameraViewDelegate: class {
 }
 
 class CameraView: UIViewController, CLLocationManagerDelegate, CameraManDelegate {
+	lazy var overlayView: UIImageView = { [unowned self] in
+		let imageView = UIImageView()
+		imageView.image = AssetManager.getImage("Rectangle")
+		imageView.backgroundColor = UIColor.clear
+		imageView.frame = CGRect(x: 0, y: 0, width: 200, height: 200)
+		imageView.alpha = 1.0
+		return imageView
+		}()
 
   lazy var blurView: UIVisualEffectView = { [unowned self] in
     let effect = UIBlurEffect(style: .dark)
@@ -97,6 +105,8 @@ class CameraView: UIViewController, CLLocationManagerDelegate, CameraManDelegate
 
     view.addSubview(containerView)
     containerView.addSubview(blurView)
+		view.addSubview(overlayView)
+		overlayView.superview?.bringSubview(toFront: overlayView)
 
     [focusImageView, capturedImageView].forEach {
       view.addSubview($0)
